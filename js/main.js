@@ -3,12 +3,12 @@ const modal = document.querySelector(".modal")
 const close = document.querySelector(".close")
 
 
-shoppingCart.addEventListener("click", function(e) {
-  e.preventDefault;
-  modal.classList.add("is-open")
-})
+shoppingCart.addEventListener("click", toggleModal)
 
-close.addEventListener("click", function(e) {
-  e.preventDefault;
-  modal.classList.remove("is-open")
-})
+close.addEventListener("click", toggleModal)
+
+function toggleModal() {
+  modal.classList.toggle("is-open")
+}
+
+new WOW().init();

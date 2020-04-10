@@ -103,15 +103,13 @@ body {
 .input-search {
   background-image: url("../img/search.svg");
   width: 306px;
+  margin-left: auto;
 }
 
 .section-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -123,6 +121,7 @@ body {
   font-size: 36px;
   line-height: 42px;
   margin: 0;
+  margin-right: 30px;
 }
 
 .cards {
@@ -148,6 +147,7 @@ body {
   margin-bottom: 30px;
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
+  text-decoration: none;
 }
 
 .card-image {
@@ -183,6 +183,10 @@ body {
   line-height: 32px;
 }
 
+.card-title-reg {
+  font-weight: 400;
+}
+
 .card-tag {
   padding: 1px 8px;
   background: #262626;
@@ -201,6 +205,23 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.card-buttons {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-price-bold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 30px;
 }
 
 .rating {
@@ -225,6 +246,22 @@ body {
 
 .price {
   margin-right: 15px;
+}
+
+.ingridients {
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C8C8C;
+}
+
+.button-card-text {
+  margin-right: 10px;
+}
+
+.button-card-image {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 
 .price:after {
@@ -303,9 +340,6 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .is-open {
@@ -353,7 +387,7 @@ body {
   background-color: transparent;
 }
 
-.food-row {
+.foods-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,6 +415,15 @@ body {
   line-height: 32px;
 }
 
+.food-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .counter-button {
   background-color: #ffffff;
   border: 1px solid #48a9ff;
@@ -392,15 +435,6 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #48a9ff;
-}
-
-.food-counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .counter {
@@ -484,7 +518,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .rating {
+  .card .rating {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
